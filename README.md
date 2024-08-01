@@ -16,12 +16,12 @@ Establish separate cases for both spinup and production phases to ensure efficie
 
 When creating your spreadsheet, it is advisable to start with a template. Begin by duplicating an existing example, such as the [Ameriflux Tower Spreadsheet]() or the [Global PPE Spreadsheet](). These templates provide a solid foundation for customization.
 
-**Customize Parameters**
+**2.1 Customize Parameters**
 
 - **Add/Remove Parameters**: Adjust the spreadsheet to fit your needs, ensuring all relevant parameters are included.
 - **Parameter Propagation**: Ensure that `pft_mins` and `pft_maxs` are correctly propagated across all relevant tabs to maintain consistency and accuracy.
 
-**Publish Your Spreadsheet**
+**2.2 Publish Your Spreadsheet**
 
 Share your main spreadsheet by publishing it to the web:
   1. Go to **File > Share > Publish to Web**.
@@ -39,45 +39,46 @@ Set up and configure the necessary files for your simulation, ensuring you have 
 
 ![image](https://github.com/user-attachments/assets/f726d622-9a0f-4b17-bb62-c1de9c598360)
 
-**Clone the `ppe_tools` Repository**
+**3.1 Clone the `ppe_tools` Repository**
 
-1. **Access Cheyenne**: Log into your Cheyenne account.
-2. **Clone Repository**: Use the following commands to clone the `ppe_tools` repository into your home directory:
+     1. **Access Cheyenne**: Log into your Cheyenne account.
+     2. **Clone Repository**: Use the following commands to clone the `ppe_tools` repository into your home directory:
 
- ```bash
- cd ~
- git clone git clone https://github.com/djk2120/ppe_tools.git
-```
+    ```bash
+      cd ~
+      git clone git clone https://github.com/djk2120/ppe_tools.git
+      ```
 
-**Check for Conda Installation**
+**3.2 Check for Conda Installation**
 
-Verify Conda: Check if Conda is installed by running:
-```
-which conda
-```
-You should see a path output similar to `p/glade/work/djk2120/miniconda3/bin/conda`. If no path is returned, proceed to install Miniconda.
-*Install Miniconda (If Necessary)*
-Create Directory: Make a directory for Miniconda:
-```
-mkdir -p ~/miniconda3
-```
-Download and Install Miniconda:
-
-```
-bash
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
-bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
-```
-*Remove the installer script:* 
-```bash
-rm -rf ~/miniconda3/miniconda.sh
-Initialize Conda: Set up Conda for your shell:
-```
-```bash
-~/miniconda3/bin/conda init bash
-~/miniconda3/bin/conda init zsh
-```
-**Create the ppe_py Python Environment**
+    a) Verify Conda: Check if Conda is installed by running:
+            ```
+            which conda
+            ```
+        You should see a path output similar to `p/glade/work/djk2120/miniconda3/bin/conda`. If no path is returned, proceed to install Miniconda.
+        *1. Install Miniconda (If Necessary)*
+            - Create Directory: Make a directory for Miniconda:
+            ```
+            mkdir -p ~/miniconda3
+            ```
+            - Download and Install Miniconda:
+            
+            ```
+            bash
+            wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
+            bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+            ```
+          *2. Remove the installer script:* 
+            ```bash
+            rm -rf ~/miniconda3/miniconda.sh
+            
+           *3. Set up Conda for your shell:*
+            ```
+            ```bash
+            ~/miniconda3/bin/conda init bash
+            ~/miniconda3/bin/conda init zsh
+            ```
+**3/3 Create the ppe_py Python Environment**
 Enter the `ppe_tools` directory:
 ```
 cd ppe_tools
