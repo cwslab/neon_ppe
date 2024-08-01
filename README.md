@@ -42,7 +42,7 @@ Set up and configure the necessary files for your simulation, ensuring you have 
 **3.1 Clone the `ppe_tools` Repository**
 - **Access Cheyenne**: Log into your Cheyenne account.
 - **Clone Repository**: Use the following commands to clone the `ppe_tools` repository into your home directory:
-```bash
+```
 cd ~
 git clone git clone https://github.com/djk2120/ppe_tools.git
  ```
@@ -59,16 +59,15 @@ mkdir -p ~/miniconda3
 ```
 - Download and Install Miniconda:
 ```
-bash
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
 bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
 ```
 - Remove the installer script:
-```bash
+```
 rm -rf ~/miniconda3/miniconda.sh
 ```          
 - Set up Conda for your shell:
-```bash
+```
 ~/miniconda3/bin/conda init bash
 ~/miniconda3/bin/conda init zsh
 ```
@@ -79,13 +78,17 @@ cd ppe_tools
 ```
 *Create Environment:* Set up the `ppe_py` environment using the provided `environment.yml` file:
 
-```bash
+```
 conda env create -f environment.yml
 ```
 **Note**: This process may take some time to complete.
 
-*Customize the `template.ipynb` Notebook*
-- In the left sidebar, navigate to ppe_tools/params/template.ipynb.
+*3.4.1 Log in to jupyterhub*
+
+See [here](https://arc.ucar.edu/knowledge_base/70549913) for help
+
+*3.4.2 Customize the `template.ipynb` Notebook*
+- In the left sidebar, navigate to `ppe_tools/params/template.ipynb`.
 - Make a copy of the template for your specific experiment.
 - Open the duplicated notebook and ensure the ppe_py environment is the active Python kernel (found in the top right corner).
 - Modify the notebook as necessary to fit your experimental requirements.
@@ -102,3 +105,11 @@ Prepare and configure the job scripts required to run your simulation ensemble.
 Submit your prepared ensemble of simulations for execution on the designated computing resources.
 - Use the appropriate command or script to submit your job ensemble to the scheduler (e.g., using qsub, sbatch, etc.).
 - Keep track of the job status and ensure all simulations run as expected.
+
+#### Step 6: Collect the History
+
+Gather and organize the output data from your simulations for analysis.
+
+- Collect the output files from the specified directories once the simulations are complete.
+- Ensure all historical data is stored in an easily accessible and well-organized format for further analysis.
+- Check that all expected data files are present and complete before proceeding to data analysis.
