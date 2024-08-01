@@ -40,45 +40,39 @@ Set up and configure the necessary files for your simulation, ensuring you have 
 ![image](https://github.com/user-attachments/assets/f726d622-9a0f-4b17-bb62-c1de9c598360)
 
 **3.1 Clone the `ppe_tools` Repository**
-
-     1. **Access Cheyenne**: Log into your Cheyenne account.
-     2. **Clone Repository**: Use the following commands to clone the `ppe_tools` repository into your home directory:
-
-    ```bash
-      cd ~
-      git clone git clone https://github.com/djk2120/ppe_tools.git
-      ```
-
+- **Access Cheyenne**: Log into your Cheyenne account.
+- **Clone Repository**: Use the following commands to clone the `ppe_tools` repository into your home directory:
+```bash
+cd ~
+git clone git clone https://github.com/djk2120/ppe_tools.git
+ ```
 **3.2 Check for Conda Installation**
-
-    a) Verify Conda: Check if Conda is installed by running:
-            ```
-            which conda
-            ```
-        You should see a path output similar to `p/glade/work/djk2120/miniconda3/bin/conda`. If no path is returned, proceed to install Miniconda.
-        *1. Install Miniconda (If Necessary)*
-            - Create Directory: Make a directory for Miniconda:
-            ```
-            mkdir -p ~/miniconda3
-            ```
-            - Download and Install Miniconda:
-            
-            ```
-            bash
-            wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
-            bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
-            ```
-          *2. Remove the installer script:* 
-            ```bash
-            rm -rf ~/miniconda3/miniconda.sh
-            
-           *3. Set up Conda for your shell:*
-            ```
-            ```bash
-            ~/miniconda3/bin/conda init bash
-            ~/miniconda3/bin/conda init zsh
-            ```
-**3/3 Create the ppe_py Python Environment**
+a) Verify Conda: Check if Conda is installed by running:
+```
+which conda
+```
+You should see a path output similar to `p/glade/work/djk2120/miniconda3/bin/conda`. If no path is returned, proceed to install Miniconda.
+ **3.3 Install Miniconda (If Necessary)**
+ - Create Directory: Make a directory for Miniconda:
+```
+mkdir -p ~/miniconda3
+```
+- Download and Install Miniconda:
+```
+bash
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
+bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+```
+- Remove the installer script:
+```bash
+rm -rf ~/miniconda3/miniconda.sh
+```          
+- Set up Conda for your shell:
+```bash
+~/miniconda3/bin/conda init bash
+~/miniconda3/bin/conda init zsh
+```
+**3.4 Create the ppe_py Python Environment**
 Enter the `ppe_tools` directory:
 ```
 cd ppe_tools
@@ -88,7 +82,6 @@ cd ppe_tools
 ```bash
 conda env create -f environment.yml
 ```
-
 **Note**: This process may take some time to complete.
 
 *Customize the `template.ipynb` Notebook*
