@@ -14,7 +14,7 @@ Establish separate cases for both spinup and production phases to ensure efficie
 
 #### Step 2: Create Your Spreadsheet
 
-When creating your spreadsheet, it is advisable to start with a template. Begin by duplicating an existing example, such as the [Ameriflux Tower Spreadsheet]() or the [Global PPE Spreadsheet](). These templates provide a solid foundation for customization.
+When creating your spreadsheet, it is advisable to start with a template. Begin by duplicating an existing example, such as the [Ameriflux Tower Spreadsheet](https://docs.google.com/spreadsheets/d/1vR0FlW9cKgvPaQb2Qmr0MSIoyUSqmdxa3kOxSVsxyDI/edit?gid=1732324005#gid=1732324005) or the [Global PPE Spreadsheet](https://docs.google.com/spreadsheets/d/1OtkaO_uAmafWKR9kgtRC2Ge6d6fkhymngSpben5SJ_Q/edit?gid=340121780#gid=340121780). These templates provide a solid foundation for customization.
 
 **2.1 Customize Parameters**
 
