@@ -1,0 +1,4 @@
+Site,aq_sp_yield_min,fff,hksat_sf,liq_canopy_storage_scalar,sucsat_sf,watsat_sf,zbedrock_sf,wc2wjb0,jmaxb0,cv,d_max,frac_sat_soil_dsl_init,act25,n_baseflow,nstem,leafcn,stem_leaf,froot_leaf,FUN_fracfixers,slatop,krmax,dleaf,medlynintercept,medlynslope,kmax,psi50,rootprof_beta,baseflow_scalar,maximum_leaf_wetted_fraction,jmaxb1
+ORNL,0.02,0.5,1,0.1,1,1,1,0.8054,0.0311,0.01,15,0.8,60,1,0.035,23.452158,2.3,1.5,0.25,0.0308,1.04E-10,0.04,100,4.449999809,2.48E-08,-270000,0.966,0.001,0.05,0.17
+OSBS,0.02,0.5,1,0.1,1,1,1,0.8054,0.0311,0.01,15,0.8,60,1,0.08,58,2.3,1.5,0.25,0.01,1.49E-10,0.04,100,2.349999905,0.000000016,-530000,0.976,0.001,0.05,0.17
+TALL,0.02,0.5,1,0.1,1,1,1,0.8054,0.0311,0.01,15,0.8,60,1,0.08,58,2.3,1.5,0.25,0.01,1.49E-10,0.04,100,2.349999905,0.000000016,-530000,0.976,0.001,0.05,0.17
